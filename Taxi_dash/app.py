@@ -7,7 +7,7 @@ st.set_page_config(page_title="Taxi Fare Dashboard", layout="wide", initial_side
 st.sidebar.markdown(
     """
     <div style="text-align: left;">
-        <img src="https://media.giphy.com/media/SuG8hEiyKDCDe/giphy.gif" alt="Taxi NYC" width="150">
+        <img src="https://media.giphy.com/media/SuG8hEiyKDCDe/giphy.gif" alt="Taxi NYC" width="120" style="border-radius: 70%;">
     </div>
     """,
     unsafe_allow_html=True
@@ -15,7 +15,7 @@ st.sidebar.markdown(
 
 # Menu latéral pour la navigation
 menu = st.sidebar.radio("", 
-                        ["🏠 Accueil", "📊 Analyses", "⚙️ Modèles", "🚖 Prédictions", "📤 Exportation"])
+                        ["🏠 Accueil", "📊 Analyses", "⚙️ Modèles", "🚖 Prédictions", "📤 Soumission"])
 
 # Charger les pages en fonction du menu sélectionné
 if menu == "🏠 Accueil":
@@ -30,6 +30,6 @@ elif menu == "⚙️ Modèles":
 elif menu == "🚖 Prédictions":
     import Prédictions
     Prédictions.show_page()
-elif menu == "📤 Exportation":
+elif menu == "📤 Soumission":
     import Exportations
     Exportations.show_page()
