@@ -1,2 +1,0 @@
-bases/data2_bon1.csv filter=lfs diff=lfs merge=lfs -text
-data2_bon1.csv filter=lfs diff=lfs merge=lfs -text
